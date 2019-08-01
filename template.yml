@@ -31,7 +31,7 @@ Resources:
         - Arn
       AutoPublishAlias: live
       DeploymentPreference:
-        Type: Linear10Percent1Minutes
+        Type: Linear10PercentEvery1Minute
         # Type: Canary10Percent10Minutes
         # Type: AllAtOnce
         Hooks:
