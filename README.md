@@ -23,4 +23,4 @@ res.status(500).send('Something broke!')
 The deployment should fail due to validation by preTraffic hook.
 
 ## Try Linear or Canary deployment
-Once the deployment succeeded, you can try other types of deployment preference. In ```template.yml```, you can see other types which got commented out. Try one of those types and see the result in CodePipeline console.
+Once the deployment succeeded, you can try other types of deployment preference. In ```template.yml```, you can see other types which got commented out. Try one of those types and see the result in [CodeDeploy](https://ap-southeast-1.console.aws.amazon.com/codesuite/codedeploy/deployments?region=ap-southeast-1) console.
