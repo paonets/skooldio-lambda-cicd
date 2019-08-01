@@ -73,7 +73,7 @@ Resources:
         Enabled: false
       Environment:
         Variables:
-          CurrentVersion: !Ref HelloWorld.Version
+          NewVersion: !Ref HelloWorld.Version
 
   LambdaExecutionRole:
     Description: Creating service role in IAM for AWS Lambda
