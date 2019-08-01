@@ -30,10 +30,10 @@ Resources:
         - LambdaExecutionRole
         - Arn
       AutoPublishAlias: live
-        DeploymentPreference:
-          # Type: Canary10Percent5Minutes
-          Hooks:
-            PreTraffic: !Ref PreTrafficHook
+      DeploymentPreference:
+        # Type: Canary10Percent5Minutes
+        Hooks:
+          PreTraffic: !Ref PreTrafficHook
       Events:
         GetEvent:
           Type: Api
