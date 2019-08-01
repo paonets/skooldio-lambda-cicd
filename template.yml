@@ -32,6 +32,7 @@ Resources:
       AutoPublishAlias: live
       DeploymentPreference:
         # Type: Linear10Percent1Minutes
+        # Type: Canary10Percent10Minutes
         Type: AllAtOnce
         Hooks:
           PreTraffic: !Ref PreTrafficHook
@@ -59,7 +60,7 @@ Resources:
             Action:
               - "codedeploy:PutLifecycleEventHookExecutionStatus"
             Resource:
-              !Sub 'arn:${AWS::Partition}:codedeploy:${AWS::Region}:${AWS::AccountId}:deploymentgroup:${ServerlessDeploymentApplication}/*'
+              !Sub 'arn:${AWS::Partition}:codedeploy:${AWS::Region}:${AWS::AccountId}:deploymentgroup:*/*'
         - Version: "2012-10-17"
           Statement:
           - Effect: "Allow"
