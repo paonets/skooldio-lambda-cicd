@@ -31,9 +31,9 @@ Resources:
         - Arn
       AutoPublishAlias: live
       DeploymentPreference:
-        # Type: Linear10PercentEvery1Minute
+        Type: Linear10PercentEvery1Minute
         # Type: Canary10Percent10Minutes
-        Type: AllAtOnce
+        # Type: AllAtOnce
         Hooks:
           PreTraffic: !Ref PreTrafficHook
       Events:
