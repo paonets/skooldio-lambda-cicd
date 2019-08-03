@@ -2,10 +2,10 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(req, res) {
-  res.status(500).send('Something broke!')
-  // res.send({
-  //   "Output": "Hello World!"
-  // });
+  // res.status(500).send('Something broke!')
+  res.send({
+    "Output": "Hello World!"
+  });
 });
 
 app.post('/', function(req, res) {
